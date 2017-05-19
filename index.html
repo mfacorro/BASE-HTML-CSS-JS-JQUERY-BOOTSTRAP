@@ -1,0 +1,52 @@
+﻿<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml">
+
+  <head>
+    <title>Solicitud de adhesión</title>
+
+    <!-- PRIMERO SE LLAMA A jQuery -->
+    <script type="text/javascript" src="js/jquery-3.2.0.min.js"></script>
+
+    <!-- CON jQuery SE ESTABLECE LOS VALORES DE LA ETIQUETA META, AYUDA A LA CORRECTA VISUALIZACION EN MOVILES -->
+    <script>
+      var viewportContent = '';
+      if (window.devicePixelRatio = 1) {
+        viewportContent = 'width=device-width, initial-scale=0.51, maximum-scale=0.51, target-densityDpi=device-dpi';
+      } else if (window.devicePixelRatio == 2) {
+        viewportContent = 'width=device-width, initial-scale=0.51, maximum-scale=0.51';
+      } else if (window.devicePixelRatio == .78) {
+        viewportContent = 'width=device-width, initial-scale=0.51, maximum-scale=0.51, target-densityDpi=device-dpi';
+      } else if (window.devicePixelRatio == 1.5) {
+        viewportContent = 'width=device-width, initial-scale=0.51, maximum-scale=0.51, target-densityDpi=device-dpi';
+      }
+      $('head').append('<meta name="viewport" content="' + viewportContent + '">');
+    </script>
+
+    <!-- AHORA SE REALIZA EL LLAMADO A BOOTSTRAP -->
+    <!-- BOOTSTRAP 3 LOCAL -->
+    <script type="text/javascript" src="bootstrap3/js/bootstrap.min.js"></script>
+    <link rel="stylesheet" href="bootstrap3/css/bootstrap.min.css">
+    <link rel="stylesheet" href="bootstrap3/css/bootstrap-theme.min.css">
+
+
+    <!-- ESTILO PERSONALIZADO -->
+    <link type='text/css' href='css/estilo.css' rel='stylesheet' media='screen' />
+    <!-- script src="//cdnjs.cloudflare.com/ajax/libs/less.js/2.7.2/less.min.js"></script -->
+  </head>
+
+  <body>
+    <!-- LA CLASE container ES DE BOOTSTRAP, SE UTILIZA PARA CONTENER TODO EL CONTENIDO Y A PARTIR DE ACA 
+    TRABAJAR CON LAS 12 CELDAS QUE UTILIZA BOOTSTRAP
+    -->
+    <div class="container">
+      <div class="page-header">
+        <span> cabecera del sitio/menu/imagen </span>
+      </div>
+      <!-- FIN class="page-header" -->
+      <span> En este espacio va el cuerpo del sitio </span>
+    </div>
+    <!-- FIN class="container" -->
+    <script type="text/javascript" src="js/sitioscript.js"></script>
+  </body>
+
+</html>

@@ -1,0 +1,389 @@
+//@fondo: #F4F6F8;
+@fondo: black;
+@color_txt: #2d333d;
+@rojo : red;
+@gris : gray;
+@blanco : white;
+@color_boton: #5096ff;
+@color_boton_sobre: #0085ce;
+
+.borde_inp {
+  border-radius: 5px 5px 5px 5px;
+  -moz-border-radius: 5px 5px 5px 5px;
+  -webkit-border-radius: 5px 5px 5px 5px;
+} // FIN .borde_inp
+
+.sombra {
+  -webkit-box-shadow: 0px 6px 0px -3px #e1e1e1;
+  -moz-box-shadow   : 0px 6px 0px -3px #e1e1e1;
+  box-shadow        : 0px 6px 0px -3px #e1e1e1;
+} // FIN .sombra
+
+// COPETE
+@copete_280:"http://127.0.0.1/sitio05/sitio/micro_responsive/adhes/img/banner_280.jpg";
+@copete_320:"http://127.0.0.1/sitio05/sitio/micro_responsive/adhes/img/banner_320x120.jpg";
+@copete_cop:"http://127.0.0.1/sitio05/sitio/micro_responsive/adhes/img/copete.jpg";
+@copete_940:"http://127.0.0.1/sitio05/sitio/micro_responsive/adhes/img/banner_940x290.jpg";
+// FIN COPETE
+
+html {
+font-family: sans-serif;
+-webkit-text-size-adjust: 100%;
+-ms-text-size-adjust: 100%;
+}
+
+
+
+
+
+
+@media (min-width:320px) {
+  // smartphones, iPhone, pantallas de 480x320px
+  body {
+    background : @fondo;
+    margin-top: 2px;
+    padding-left: 1%;
+    font-family: 'Open Sans', sans-serif;
+    color: @color_txt;
+    font-weight: normal;
+  } // FIN body
+
+ 
+  h2 {
+    font-size: 12px;
+    text-align: center;
+  } // FIN h2
+
+  label {
+    font-size: 11px;
+    color: @gris;
+    display: block;
+    padding-left: 5px;
+  } // FIN label
+
+  input{
+    font-size: 12px;
+    margin-left: 5px;
+    margin-top: 4px;
+    margin-bottom: 4px;
+    width: 220px;
+    .borde_inp;
+    .sombra;
+  } // FIN input
+
+  span.red{
+    color: @rojo;
+  } // FIN span.red
+
+  .mensajes {
+    text-align: left;
+    width: 250px;
+    height: 55px;
+    font-size: 13px;
+    background-color: white;
+    .sombra;
+  } // FIN .mensajes
+
+  div.bConfimar {
+    background : @color_boton;
+    color : @blanco;
+    text-decoration: none;
+    text-align: center;
+    padding: 10px 14px;
+    font-size: 12px;
+    font-weight: 70px;
+    margin-left: 25%;
+    margin-right: 35%;
+    margin-top : 15px;
+    .sombra;
+    .borde_inp;
+  } // FIN .bConfirmar
+
+  div.bConfirmar:hover {
+    background: @color_boton_sobre;
+    cursor : pointer;
+  } // FIN div.bConfirmar:hover 
+
+} // FIN @media (min-width:320px)
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+@media (min-width:481px) {
+  // smartphones, Celulares Android, iPhone
+  // smartphones, iPhone, pantallas de 480x320px
+  body {
+    background : @fondo;
+    margin-top: 2px;
+    padding-left: 8%;
+    font-family: 'Open Sans', sans-serif;
+    color: @color_txt;
+    font-weight: normal;
+  } // FIN body
+
+  div.ban {
+    margin-left: 5%;
+    width: 320px;
+    height: 120px;
+    background-image: url(@copete_320);
+    cursor: pointer;
+  } // FIN div.ban
+
+  h2 {
+    font-size: 14px;
+    text-align: center;
+  } // FIN h2
+
+  label {
+    font-size: 13px;
+    color: @gris;
+    display: block;
+    padding-left: 35px;
+  } // FIN label
+
+  input{
+    font-size: 22px;
+    margin-left: 65px;
+    margin-top: 4px;
+    margin-bottom: 4px;
+    width: 240px;
+    .borde_inp;
+    .sombra;
+  } // FIN input
+
+  
+
+  .mensajes {
+    text-align: left;
+    width: 300px;
+    height: 55px;
+    font-size: 13px;
+    margin-left: 50px;
+    background-color: @blanco;
+    .sombra;
+  } // FIN .mensajes
+
+  div.bConfimar {
+    background : @color_boton;
+    color : @blanco;
+    text-decoration: none;
+    text-align: center;
+    padding: 16px 14px;
+    font-size: 18px;
+    font-weight: 70px;
+    margin-left: 25%;
+    margin-right: 35%;
+    margin-top : 15px;
+    .sombra;
+    .borde_inp;
+  } // FIN .bConfirmar
+
+  div.bConfirmar:hover {
+    background: @color_boton_sobre;
+    cursor : pointer;
+  } // FIN div.bConfirmar:hover 
+
+
+} // FIN @media (min-width:481px)
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+@media (min-width:641px) {
+  // Tablets, iPad, e-readers, pantallas de 800x480px o 854x480px, HP x360 11
+  body {
+    background : @fondo;
+    margin-top: -10px;
+    padding-left:15%;
+    font-family: 'Open Sans', sans-serif;
+    color: @color_txt;
+    font-weight: normal;
+  } // FIN body
+  div.ban { 
+    width: 900px;
+    height: 200px;
+    background-image: url(@copete_cop);
+    cursor: pointer;
+  } // FIN div.ban
+  label {
+    font-size: 20px;
+    color: @gris;
+    display: block;
+    padding-left: 35px;
+  } // FIN label
+  input{
+    font-size: 16px;
+    font-size: 16px;
+    margin-left: 70px;
+    margin-top: 10px;
+    margin-bottom: 12px;
+    width: 450px;
+    .borde_inp;
+    .sombra;
+  } // FIN input
+
+  span.red{
+    color: @rojo;
+  } // FIN span.red
+  .mensajes {
+    text-align: center;
+    width: 900px;
+    height: 35px;
+    background-color: white;
+    .sombra;
+  } // FIN .mensajes
+
+  div.bConfimar {
+    background : @color_boton;
+    color : @blanco;
+    text-decoration: none;
+    text-align: center;
+    padding : 12px 14px;
+    font-size : 16px;
+    font-weight: 700px;
+    margin-left: 25%;
+    margin-right: 55%;
+    margin-top : 15px;
+    .sombra;
+    .borde_inp;
+  } // FIN .bConfirmar
+
+  div.bConfirmar:hover {
+    background: @color_boton_sobre;
+    cursor : pointer;
+  } // FIN div.bConfirmar:hover 
+
+} /* FIN @media (min-width:641px) */
+
+@media (min-width:961px) {
+  /* Tablet, ipad, laptops o PC */
+
+} // FIN @media (min-width:961px)
+
+@media (min-width:1025px) {
+  /* Tablet grandes, laptops, PC */
+
+} // FIN @media (min-width:1025px)
+
+@media (min-width:1281px) {
+  /* Pantallas de Alta Resolucion */
+} // FIN @media (min-width:1281px)
